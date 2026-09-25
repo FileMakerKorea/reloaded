@@ -1,0 +1,16 @@
+{
+  "connection": {
+    "connected": true,
+    "database": "reloaded_dev",
+    "version": "PostgreSQL 16.14 (Homebrew) on aarch64-apple-darwin25.6.0, compiled by Apple clang version 21.0.0 (clang-2100.1.1.101), 64-bit",
+    "isolated": true
+  },
+  "commentsReadFirst": true,
+  "concurrentUniqueCodes": 12,
+  "nextCode": "F013",
+  "rollback": true,
+  "customerInsertRead": true,
+  "invalidNameRejected": true,
+  "canonicalRenameAndComment": true,
+  "staleMetadataRenameRejected": true
+}

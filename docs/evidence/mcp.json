@@ -1,0 +1,9 @@
+{
+  "transport": "stdio",
+  "tools": [
+    "project_read",
+    "object_patch"
+  ],
+  "persistedWidth": 456,
+  "staleRejected": true
+}

@@ -1,0 +1,45 @@
+{
+  "name": "reloaded-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "desktop": "electron electron/main.cjs",
+    "db:start": "node scripts/local-db.mjs start",
+    "db:stop": "node scripts/local-db.mjs stop",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "tsx scripts/build.ts",
+    "preview": "tsx server/runtime.ts",
+    "mcp": "tsx server/mcp.ts",
+    "verify:db": "tsx scripts/verify-db.ts",
+    "verify:mcp": "tsx scripts/verify-mcp.ts",
+    "verify:codex": "tsx scripts/verify-codex.ts",
+    "licenses": "node scripts/licenses.mjs",
+    "start": "npm run db:start && npm run dev",
+    "predesktop": "node node_modules/electron/install.js",
+    "verify:security": "tsx scripts/verify-security.ts",
+    "perf:fixtures": "tsx scripts/perf-fixtures.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "electron": "^41.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "prettier": "^3.6.0"
+  }
+}
