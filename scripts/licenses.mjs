@@ -36,7 +36,8 @@ await writeFile(
   "docs/evidence/licenses.json",
   JSON.stringify(result, null, 2) + "\n",
 );
-await writeFile("THIRD_PARTY_NOTICES.md", notices);
+// Normalize whitespace only; preserve every license word and paragraph.
+await writeFile("THIRD_PARTY_NOTICES.md", notices.replace(/\r\n/g, "\n").replace(/[ \t]+$/gm, ""));
 console.log(
   JSON.stringify(
     {
