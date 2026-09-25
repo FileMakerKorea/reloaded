@@ -59,6 +59,8 @@ function Editor() {
       cancelAnimationFrame(second);
     };
   }, [project, measuring]);
+  const pointerSamples = useRef<unknown[]>([]);
+  const pointerSequence = useRef(0);
   const current = useRef(project);
   current.current = project;
   const gesture = useRef<
@@ -70,6 +72,9 @@ function Editor() {
         sx: number;
         sy: number;
         axis: string;
+        started: number;
+        lastMove: number;
+        moves: number;
       }
     | undefined
   >(undefined);
@@ -191,12 +196,19 @@ function Editor() {
       sx: rect.width / canvas.offsetWidth,
       sy: rect.height / canvas.offsetHeight,
       axis,
+      started: measuring ? performance.now() : 0,
+      lastMove: 0,
+      moves: 0,
     };
     e.currentTarget.setPointerCapture(e.pointerId);
   }
   function move(e: React.PointerEvent<HTMLDivElement>) {
     const g = gesture.current;
     if (!g || !current.current) return;
+    if (measuring) {
+      g.lastMove = performance.now();
+      g.moves++;
+    }
     const dx = (e.clientX - g.x) / g.sx,
       dy = (e.clientY - g.y) / g.sy;
     const others = current.current.nodes.filter(
@@ -268,6 +280,55 @@ function Editor() {
     else if (JSON.stringify(g.before) !== JSON.stringify(current.current)) {
       setPast((p) => historyPush(p, g.before));
       setFuture([]);
+    }
+    if (measuring && g.moves && !cancel) {
+      const released = performance.now();
+      const expected = current.current?.nodes.find((n) => n.id === g.node.id);
+      const sequence = ++pointerSequence.current;
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          const completed = performance.now();
+          const element = document.querySelector<HTMLElement>(
+            `[data-object-id="${g.node.id}"]`,
+          );
+          const actual = element
+            ? {
+                x: parseFloat(element.style.left),
+                y: parseFloat(element.style.top),
+                w: parseFloat(element.style.width),
+                h: parseFloat(element.style.height),
+              }
+            : null;
+          const rect = element?.getBoundingClientRect();
+          const matches =
+            !!expected &&
+            !!actual &&
+            (["x", "y", "w", "h"] as const).every(
+              (key) => actual[key] === expected[key],
+            );
+          pointerSamples.current.push({
+            sequence,
+            axis: g.axis,
+            count: current.current?.nodes.length,
+            moves: g.moves,
+            lastMoveToFrameMs: completed - g.lastMove,
+            releaseToFrameMs: completed - released,
+            gestureToFrameMs: completed - g.started,
+            expected: expected && {
+              x: expected.x,
+              y: expected.y,
+              w: expected.w,
+              h: expected.h,
+            },
+            actual,
+            rect: rect && { width: rect.width, height: rect.height },
+            matches,
+          });
+          document.documentElement.dataset.pointerSamples = JSON.stringify(
+            pointerSamples.current,
+          );
+        }),
+      );
     }
     gesture.current = undefined;
     setGuide(false);
