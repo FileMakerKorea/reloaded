@@ -1,0 +1,74 @@
+{
+  "environment": "macOS arm64; Codex Chromium; actual editor dev and generated runtime production; one load/geometry sample per size; two RAF included",
+  "measurements": [
+    {
+      "mode": "runtime",
+      "count": 100,
+      "elapsedMs": 33.100000001490116,
+      "dom": 300,
+      "heapMB": 12.57105827331543
+    },
+    {
+      "mode": "editor",
+      "operation": "load",
+      "count": 100,
+      "elapsedMs": 26.200000002980232,
+      "dom": 300,
+      "heapMB": 17.996837615966797
+    },
+    {
+      "mode": "editor",
+      "operation": "geometry",
+      "count": 100,
+      "elapsedMs": 26.899999998509884,
+      "dom": 304,
+      "heapMB": 20.39167308807373
+    },
+    {
+      "mode": "runtime",
+      "count": 1000,
+      "elapsedMs": 43.399999998509884,
+      "dom": 3000,
+      "heapMB": 15.955732345581055
+    },
+    {
+      "mode": "runtime",
+      "count": 10000,
+      "elapsedMs": 502.29999999701977,
+      "dom": 30000,
+      "heapMB": 40.716782569885254
+    },
+    {
+      "mode": "editor",
+      "operation": "load",
+      "count": 1000,
+      "elapsedMs": 65.89999999850988,
+      "dom": 3000,
+      "heapMB": 16.854557037353516
+    },
+    {
+      "mode": "editor",
+      "operation": "geometry",
+      "count": 1000,
+      "elapsedMs": 27.799999997019768,
+      "dom": 3004,
+      "heapMB": 28.336458206176758
+    },
+    {
+      "mode": "editor",
+      "operation": "load",
+      "count": 10000,
+      "elapsedMs": 669.3999999985099,
+      "dom": 30000,
+      "heapMB": 55.21774387359619
+    },
+    {
+      "mode": "editor",
+      "operation": "geometry",
+      "count": 10000,
+      "elapsedMs": 139.20000000298023,
+      "dom": 30004,
+      "heapMB": 120.8159236907959
+    }
+  ]
+}

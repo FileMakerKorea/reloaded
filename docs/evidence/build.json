@@ -1,0 +1,76 @@
+{
+  "runtime": [
+    {
+      "file": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 3294,
+      "gzip": 705
+    },
+    {
+      "file": "index.html",
+      "bytes": 361,
+      "gzip": 283
+    },
+    {
+      "file": "assets/index-0l3PlNvN.css",
+      "bytes": 4484,
+      "gzip": 1560
+    },
+    {
+      "file": "assets/index-BYobMRdv.js",
+      "bytes": 228209,
+      "gzip": 71303
+    }
+  ],
+  "editor": [
+    {
+      "file": "index.html",
+      "bytes": 365,
+      "gzip": 291
+    },
+    {
+      "file": "assets/index-DLWQ3HrZ.js",
+      "bytes": 298499,
+      "gzip": 89540
+    },
+    {
+      "file": "assets/index-lMrP5qKc.css",
+      "bytes": 8149,
+      "gzip": 2578
+    }
+  ],
+  "checks": {
+    "editorMetadataAbsent": true,
+    "sourceMapsAbsent": true
+  },
+  "modelRevision": 2,
+  "runtimeModules": [
+    "\u0000vite/modulepreload-polyfill.js",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/jsx-runtime.js?commonjs-module",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports",
+    "node_modules/react/cjs/react-jsx-runtime.production.js",
+    "node_modules/react/jsx-runtime.js",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/jsx-runtime.js?commonjs-es-import",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react-dom/client.js?commonjs-module",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/scheduler/index.js?commonjs-module",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports",
+    "node_modules/scheduler/cjs/scheduler.production.js",
+    "node_modules/scheduler/index.js",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/index.js?commonjs-module",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/cjs/react.production.js?commonjs-exports",
+    "node_modules/react/cjs/react.production.js",
+    "node_modules/react/index.js",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react-dom/index.js?commonjs-module",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports",
+    "node_modules/react-dom/cjs/react-dom.production.js",
+    "node_modules/react-dom/index.js",
+    "node_modules/react-dom/cjs/react-dom-client.production.js",
+    "node_modules/react-dom/client.js",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react-dom/client.js?commonjs-es-import",
+    "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/index.js?commonjs-es-import",
+    "src/runtime/Business.tsx",
+    "src/runtime/style.css",
+    "work/generated/main.tsx",
+    "work/generated/index.html"
+  ]
+}

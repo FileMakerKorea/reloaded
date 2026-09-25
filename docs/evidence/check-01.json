@@ -1,0 +1,248 @@
+{
+  "environment": "macOS arm64, Codex in-app Chromium, React dev build, 2 RAF, no virtualization, sequential modes, no forced GC",
+  "measurements": [
+    {
+      "mode": "baseline",
+      "count": 100,
+      "run": 1,
+      "renderMs": 35.4,
+      "updateMs": 31.3,
+      "dom": 200,
+      "heapMB": 10.08
+    },
+    {
+      "mode": "baseline",
+      "count": 100,
+      "run": 2,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 200,
+      "heapMB": 10.72
+    },
+    {
+      "mode": "baseline",
+      "count": 100,
+      "run": 3,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 200,
+      "heapMB": 11.31
+    },
+    {
+      "mode": "runtime",
+      "count": 100,
+      "run": 1,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 200,
+      "heapMB": 10.48
+    },
+    {
+      "mode": "runtime",
+      "count": 100,
+      "run": 2,
+      "renderMs": 33.3,
+      "updateMs": 33.4,
+      "dom": 200,
+      "heapMB": 11
+    },
+    {
+      "mode": "runtime",
+      "count": 100,
+      "run": 3,
+      "renderMs": 33.3,
+      "updateMs": 33.4,
+      "dom": 200,
+      "heapMB": 11.26
+    },
+    {
+      "mode": "editor",
+      "count": 100,
+      "run": 1,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 203,
+      "heapMB": 12.93
+    },
+    {
+      "mode": "editor",
+      "count": 100,
+      "run": 2,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 203,
+      "heapMB": 10.5
+    },
+    {
+      "mode": "editor",
+      "count": 100,
+      "run": 3,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 203,
+      "heapMB": 12.22
+    },
+    {
+      "mode": "baseline",
+      "count": 1000,
+      "run": 1,
+      "renderMs": 35.6,
+      "updateMs": 32.2,
+      "dom": 2000,
+      "heapMB": 23.07
+    },
+    {
+      "mode": "baseline",
+      "count": 1000,
+      "run": 2,
+      "renderMs": 33.5,
+      "updateMs": 34,
+      "dom": 2000,
+      "heapMB": 16.01
+    },
+    {
+      "mode": "baseline",
+      "count": 1000,
+      "run": 3,
+      "renderMs": 33.3,
+      "updateMs": 33.3,
+      "dom": 2000,
+      "heapMB": 21.69
+    },
+    {
+      "mode": "runtime",
+      "count": 1000,
+      "run": 1,
+      "renderMs": 33.3,
+      "updateMs": 35.3,
+      "dom": 2000,
+      "heapMB": 23.87
+    },
+    {
+      "mode": "runtime",
+      "count": 1000,
+      "run": 2,
+      "renderMs": 33.2,
+      "updateMs": 33.3,
+      "dom": 2000,
+      "heapMB": 30.52
+    },
+    {
+      "mode": "runtime",
+      "count": 1000,
+      "run": 3,
+      "renderMs": 33.4,
+      "updateMs": 33.2,
+      "dom": 2000,
+      "heapMB": 14.06
+    },
+    {
+      "mode": "editor",
+      "count": 1000,
+      "run": 1,
+      "renderMs": 33.3,
+      "updateMs": 33.4,
+      "dom": 2003,
+      "heapMB": 20.91
+    },
+    {
+      "mode": "editor",
+      "count": 1000,
+      "run": 2,
+      "renderMs": 33.3,
+      "updateMs": 33.4,
+      "dom": 2003,
+      "heapMB": 27.73
+    },
+    {
+      "mode": "editor",
+      "count": 1000,
+      "run": 3,
+      "renderMs": 33.4,
+      "updateMs": 35.3,
+      "dom": 2003,
+      "heapMB": 34.47
+    },
+    {
+      "mode": "baseline",
+      "count": 10000,
+      "run": 1,
+      "renderMs": 528.9,
+      "updateMs": 137,
+      "dom": 20000,
+      "heapMB": 45.45
+    },
+    {
+      "mode": "baseline",
+      "count": 10000,
+      "run": 2,
+      "renderMs": 454.6,
+      "updateMs": 78.8,
+      "dom": 20000,
+      "heapMB": 70.99
+    },
+    {
+      "mode": "baseline",
+      "count": 10000,
+      "run": 3,
+      "renderMs": 531.6,
+      "updateMs": 135.2,
+      "dom": 20000,
+      "heapMB": 59.15
+    },
+    {
+      "mode": "runtime",
+      "count": 10000,
+      "run": 1,
+      "renderMs": 465,
+      "updateMs": 70.7,
+      "dom": 20000,
+      "heapMB": 84.64
+    },
+    {
+      "mode": "runtime",
+      "count": 10000,
+      "run": 2,
+      "renderMs": 462.2,
+      "updateMs": 137.8,
+      "dom": 20000,
+      "heapMB": 117.1
+    },
+    {
+      "mode": "runtime",
+      "count": 10000,
+      "run": 3,
+      "renderMs": 508,
+      "updateMs": 75.4,
+      "dom": 20000,
+      "heapMB": 157.01
+    },
+    {
+      "mode": "editor",
+      "count": 10000,
+      "run": 1,
+      "renderMs": 526.2,
+      "updateMs": 145.3,
+      "dom": 20003,
+      "heapMB": 85.66
+    },
+    {
+      "mode": "editor",
+      "count": 10000,
+      "run": 2,
+      "renderMs": 435.4,
+      "updateMs": 81.9,
+      "dom": 20003,
+      "heapMB": 112.03
+    },
+    {
+      "mode": "editor",
+      "count": 10000,
+      "run": 3,
+      "renderMs": 470.6,
+      "updateMs": 146.2,
+      "dom": 20003,
+      "heapMB": 145.9
+    }
+  ]
+}
