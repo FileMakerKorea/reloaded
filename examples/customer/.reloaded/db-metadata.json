@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "source": "reloaded_meta.identity",
+  "objects": [
+    {
+      "id": "839041e4-186c-408e-ac61-5e75f9469d2a",
+      "scope": "D001",
+      "code": "T001",
+      "kind": "table",
+      "display_name": "고객",
+      "purpose": "고객 기본정보",
+      "physical_name": "reloaded_demo.t001",
+      "pg_type": null,
+      "revision": "1",
+      "deleted_at": null
+    },
+    {
+      "id": "16937cb7-4456-4cea-ad6f-2add978db34c",
+      "scope": "D001.T001",
+      "code": "F001",
+      "kind": "field",
+      "display_name": "고객명",
+      "purpose": "고객 표시 이름",
+      "physical_name": "f001",
+      "pg_type": "text",
+      "revision": "5",
+      "deleted_at": null
+    },
+    {
+      "id": "8758716c-2929-4f4b-91e9-37862ff30871",
+      "scope": "D001.T001",
+      "code": "F002",
+      "kind": "field",
+      "display_name": "전화번호",
+      "purpose": "고객 연락처",
+      "physical_name": "f002",
+      "pg_type": "text",
+      "revision": "1",
+      "deleted_at": null
+    },
+    {
+      "id": "4781e79c-16f7-4b8d-ab1d-2e4438738ed3",
+      "scope": "root",
+      "code": "D001",
+      "kind": "database",
+      "display_name": "고객관리",
+      "purpose": "격리된 예제 데이터베이스",
+      "physical_name": "reloaded_dev",
+      "pg_type": null,
+      "revision": "1",
+      "deleted_at": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "measuredAt": "2026-09-25T15:44:06.888Z",
+  "operation": "two numeric geometry fills then DOM measurement",
+  "automationInputToDOMMs": 16,
+  "rect": {
+    "height": 47.99479293823242,
+    "width": 320
+  },
+  "humanThinkingTime": "not measured",
+  "paintTime": "not measured by this DOM-read proxy"
+}

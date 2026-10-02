@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-25T16:15:46.155Z",
+  "command": "npm start",
+  "devURL": "http://127.0.0.1:5173",
+  "runtimeURL": "http://127.0.0.1:4173",
+  "editor": {
+    "height": 47.99479293823242,
+    "measurement": null,
+    "width": 320
+  },
+  "runtime": {
+    "handles": 0,
+    "height": 47.99479293823242,
+    "width": 320
+  },
+  "editorErrors": [],
+  "runtimeErrors": []
+}

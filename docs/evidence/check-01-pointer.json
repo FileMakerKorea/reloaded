@@ -1,0 +1,3252 @@
+{
+  "measuredAt": "2026-09-25T16:15:02.209Z",
+  "environment": {
+    "browser": "Codex in-app Chromium; exact engine version not exposed by DOM tool",
+    "platform": "macOS arm64",
+    "build": "Vite development / React",
+    "viewport": {
+      "height": 800,
+      "width": 1422
+    },
+    "visibility": "visible",
+    "os": "macOS 27.0 (26A428)",
+    "cpu": "Apple M5 Pro",
+    "memoryBytes": 51539607552,
+    "node": "26.4.0",
+    "vite": "7.3.6",
+    "throttling": "none configured",
+    "backgroundLoad": "not controlled",
+    "browserVersionLimitation": "navigator is unavailable in the restricted DOM evaluation API; collection attempt failed after samples, no samples rerun or removed"
+  },
+  "warmupPerAxis": 5,
+  "samplesPerAxis": 50,
+  "quantile": "nearest rank ceil(n*p)-1",
+  "boundary": "last pointermove handler entry through pointerup history commit and second requestAnimationFrame; excludes pre-handler input queue and human time; paint opportunity proxy",
+  "summary": [
+    {
+      "axis": "move",
+      "n": 50,
+      "p50": 33.5,
+      "p95": 66.70000000298023,
+      "max": 89.40000000596046,
+      "gestureP95": 219.5,
+      "automationP95": 404,
+      "geometryErrors": 0
+    },
+    {
+      "axis": "xy",
+      "n": 50,
+      "p50": 33.5,
+      "p95": 50.20000000298023,
+      "max": 66.70000000298023,
+      "gestureP95": 212.70000000298023,
+      "automationP95": 403,
+      "geometryErrors": 0
+    },
+    {
+      "axis": "all",
+      "n": 100,
+      "p50": 33.5,
+      "p95": 66.59999999403954,
+      "max": 89.40000000596046,
+      "gestureP95": 214.39999999850988,
+      "automationP95": 403,
+      "geometryErrors": 0
+    }
+  ],
+  "errors": [],
+  "samples": [
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 136.60000000149012,
+      "lastMoveToFrameMs": 48.400000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 22.400000005960464,
+      "sequence": 1,
+      "index": 0,
+      "warmup": true,
+      "automationMs": 145
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.19999999552965,
+      "lastMoveToFrameMs": 33,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.299999997019768,
+      "sequence": 2,
+      "index": 1,
+      "warmup": true,
+      "automationMs": 100
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 80.39999999850988,
+      "lastMoveToFrameMs": 48.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 30.30000000447035,
+      "sequence": 3,
+      "index": 2,
+      "warmup": true,
+      "automationMs": 97
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 80.60000000149012,
+      "lastMoveToFrameMs": 49.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 31.80000000447035,
+      "sequence": 4,
+      "index": 3,
+      "warmup": true,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.79999999701977,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.5,
+      "sequence": 5,
+      "index": 4,
+      "warmup": true,
+      "automationMs": 98
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 78.89999999850988,
+      "lastMoveToFrameMs": 48,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 30.5,
+      "sequence": 6,
+      "index": 5,
+      "warmup": true,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 79.39999999850988,
+      "lastMoveToFrameMs": 48.70000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 27.299999997019768,
+      "sequence": 7,
+      "index": 6,
+      "warmup": true,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 79,
+      "lastMoveToFrameMs": 46.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 30.399999998509884,
+      "sequence": 8,
+      "index": 7,
+      "warmup": true,
+      "automationMs": 98
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 64.20000000298023,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.900000005960464,
+      "sequence": 9,
+      "index": 8,
+      "warmup": true,
+      "automationMs": 83
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 63.80000000447035,
+      "lastMoveToFrameMs": 33.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.399999998509884,
+      "sequence": 10,
+      "index": 9,
+      "warmup": true,
+      "automationMs": 80
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 233.9000000059605,
+      "lastMoveToFrameMs": 66.30000000447035,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 32.80000000447035,
+      "sequence": 11,
+      "index": 10,
+      "warmup": false,
+      "automationMs": 244
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 62.30000000447035,
+      "lastMoveToFrameMs": 31.600000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.600000001490116,
+      "sequence": 12,
+      "index": 11,
+      "warmup": false,
+      "automationMs": 78
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 63.599999994039536,
+      "lastMoveToFrameMs": 32.69999999552965,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18,
+      "sequence": 13,
+      "index": 12,
+      "warmup": false,
+      "automationMs": 83
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 64,
+      "lastMoveToFrameMs": 32.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.200000002980232,
+      "sequence": 14,
+      "index": 13,
+      "warmup": false,
+      "automationMs": 81
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 62.20000000298023,
+      "lastMoveToFrameMs": 30.200000002980232,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.5,
+      "sequence": 15,
+      "index": 14,
+      "warmup": false,
+      "automationMs": 79
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 64.10000000149012,
+      "lastMoveToFrameMs": 31.400000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17,
+      "sequence": 16,
+      "index": 15,
+      "warmup": false,
+      "automationMs": 83
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 62.39999999850989,
+      "lastMoveToFrameMs": 29.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 15.600000001490116,
+      "sequence": 17,
+      "index": 16,
+      "warmup": false,
+      "automationMs": 79
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 62.79999999701977,
+      "lastMoveToFrameMs": 32.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.100000001490116,
+      "sequence": 18,
+      "index": 17,
+      "warmup": false,
+      "automationMs": 81
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 63.89999999850989,
+      "lastMoveToFrameMs": 31.30000000447035,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.600000001490116,
+      "sequence": 19,
+      "index": 18,
+      "warmup": false,
+      "automationMs": 81
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 63.5,
+      "lastMoveToFrameMs": 32.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.799999997019768,
+      "sequence": 20,
+      "index": 19,
+      "warmup": false,
+      "automationMs": 82
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 212.80000000447035,
+      "lastMoveToFrameMs": 65.70000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 32.80000000447035,
+      "sequence": 21,
+      "index": 20,
+      "warmup": false,
+      "automationMs": 232
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 62,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.900000005960464,
+      "sequence": 22,
+      "index": 21,
+      "warmup": false,
+      "automationMs": 79
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 64.10000000149012,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.80000000447035,
+      "sequence": 23,
+      "index": 22,
+      "warmup": false,
+      "automationMs": 82
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 63.60000000149011,
+      "lastMoveToFrameMs": 33.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.899999998509884,
+      "sequence": 24,
+      "index": 23,
+      "warmup": false,
+      "automationMs": 82
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 63.900000005960464,
+      "lastMoveToFrameMs": 33.30000000447035,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.700000002980232,
+      "sequence": 25,
+      "index": 24,
+      "warmup": false,
+      "automationMs": 81
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 62.29999999701977,
+      "lastMoveToFrameMs": 29.599999994039536,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 15.799999997019768,
+      "sequence": 26,
+      "index": 25,
+      "warmup": false,
+      "automationMs": 80
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 64,
+      "lastMoveToFrameMs": 33.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.600000001490116,
+      "sequence": 27,
+      "index": 26,
+      "warmup": false,
+      "automationMs": 119
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 80.29999999701977,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 19.599999994039536,
+      "sequence": 28,
+      "index": 27,
+      "warmup": false,
+      "automationMs": 262
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 226.5,
+      "lastMoveToFrameMs": 66.59999999403954,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 32.5,
+      "sequence": 29,
+      "index": 28,
+      "warmup": false,
+      "automationMs": 402
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 78.5,
+      "lastMoveToFrameMs": 33.30000000447035,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.100000001490116,
+      "sequence": 30,
+      "index": 29,
+      "warmup": false,
+      "automationMs": 300
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 83.80000000447035,
+      "lastMoveToFrameMs": 33.400000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.5,
+      "sequence": 31,
+      "index": 30,
+      "warmup": false,
+      "automationMs": 194
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 71.90000000596046,
+      "lastMoveToFrameMs": 33.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 16.700000002980232,
+      "sequence": 32,
+      "index": 31,
+      "warmup": false,
+      "automationMs": 97
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 196.80000000447035,
+      "lastMoveToFrameMs": 89.40000000596046,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 32.70000000298023,
+      "sequence": 33,
+      "index": 32,
+      "warmup": false,
+      "automationMs": 301
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 82.29999999701977,
+      "lastMoveToFrameMs": 32.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.799999997019768,
+      "sequence": 34,
+      "index": 33,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 79.39999999850988,
+      "lastMoveToFrameMs": 33.600000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.799999997019768,
+      "sequence": 35,
+      "index": 34,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 76.10000000149012,
+      "lastMoveToFrameMs": 34.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.69999999552965,
+      "sequence": 36,
+      "index": 35,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 86.79999999701977,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.799999997019768,
+      "sequence": 37,
+      "index": 36,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 234.10000000149012,
+      "lastMoveToFrameMs": 66.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 32.600000001490116,
+      "sequence": 38,
+      "index": 37,
+      "warmup": false,
+      "automationMs": 405
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 78.80000000447035,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.5,
+      "sequence": 39,
+      "index": 38,
+      "warmup": false,
+      "automationMs": 197
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 73.19999999552965,
+      "lastMoveToFrameMs": 33.79999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.5,
+      "sequence": 40,
+      "index": 39,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 70,
+      "lastMoveToFrameMs": 33.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.200000002980232,
+      "sequence": 41,
+      "index": 40,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 214.60000000149012,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18,
+      "sequence": 42,
+      "index": 41,
+      "warmup": false,
+      "automationMs": 392
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 78.89999999850988,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.099999994039536,
+      "sequence": 43,
+      "index": 42,
+      "warmup": false,
+      "automationMs": 211
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 85.79999999701977,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.5,
+      "sequence": 44,
+      "index": 43,
+      "warmup": false,
+      "automationMs": 97
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.59999999403954,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 19.799999997019768,
+      "sequence": 45,
+      "index": 44,
+      "warmup": false,
+      "automationMs": 124
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.5,
+      "lastMoveToFrameMs": 34.19999999552965,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 20.099999994039536,
+      "sequence": 46,
+      "index": 45,
+      "warmup": false,
+      "automationMs": 278
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 209,
+      "lastMoveToFrameMs": 50.099999994039536,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.299999997019768,
+      "sequence": 47,
+      "index": 46,
+      "warmup": false,
+      "automationMs": 402
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 84.80000000447035,
+      "lastMoveToFrameMs": 33.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.30000000447035,
+      "sequence": 48,
+      "index": 47,
+      "warmup": false,
+      "automationMs": 124
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 82.10000000149012,
+      "lastMoveToFrameMs": 35.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 21.399999998509884,
+      "sequence": 49,
+      "index": 48,
+      "warmup": false,
+      "automationMs": 273
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 78.40000000596046,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.5,
+      "sequence": 50,
+      "index": 49,
+      "warmup": false,
+      "automationMs": 198
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 211.30000000447035,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.100000001490116,
+      "sequence": 51,
+      "index": 50,
+      "warmup": false,
+      "automationMs": 402
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 69.89999999850988,
+      "lastMoveToFrameMs": 33.79999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.299999997019768,
+      "sequence": 52,
+      "index": 51,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 85.60000000149012,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.899999998509884,
+      "sequence": 53,
+      "index": 52,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.39999999850988,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.299999997019768,
+      "sequence": 54,
+      "index": 53,
+      "warmup": false,
+      "automationMs": 198
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 208.5,
+      "lastMoveToFrameMs": 50.10000000149011,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.100000001490116,
+      "sequence": 55,
+      "index": 54,
+      "warmup": false,
+      "automationMs": 399
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 78.29999999701977,
+      "lastMoveToFrameMs": 32.79999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 15.600000001490116,
+      "sequence": 56,
+      "index": 55,
+      "warmup": false,
+      "automationMs": 197
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 86.39999999850988,
+      "lastMoveToFrameMs": 33.600000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.799999997019768,
+      "sequence": 57,
+      "index": 56,
+      "warmup": false,
+      "automationMs": 198
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 82.70000000298023,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18,
+      "sequence": 58,
+      "index": 57,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 214.39999999850988,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.600000001490116,
+      "sequence": 59,
+      "index": 58,
+      "warmup": false,
+      "automationMs": 404
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 78.09999999403954,
+      "lastMoveToFrameMs": 32.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 16,
+      "sequence": 60,
+      "index": 59,
+      "warmup": false,
+      "automationMs": 195
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 219.5,
+      "lastMoveToFrameMs": 66.89999999850988,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 26.599999994039536,
+      "sequence": 61,
+      "index": 60,
+      "warmup": false,
+      "automationMs": 384
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 82.30000000447035,
+      "lastMoveToFrameMs": 33.30000000447035,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17,
+      "sequence": 62,
+      "index": 61,
+      "warmup": false,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 63.89999999850989,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.899999998509884,
+      "sequence": 63,
+      "index": 62,
+      "warmup": false,
+      "automationMs": 104
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 80.30000000447035,
+      "lastMoveToFrameMs": 49.70000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 31.600000001490116,
+      "sequence": 64,
+      "index": 63,
+      "warmup": false,
+      "automationMs": 299
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 71.19999999552965,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.399999998509884,
+      "sequence": 65,
+      "index": 64,
+      "warmup": false,
+      "automationMs": 197
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 201.89999999850988,
+      "lastMoveToFrameMs": 50.10000000149011,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.899999998509884,
+      "sequence": 66,
+      "index": 65,
+      "warmup": false,
+      "automationMs": 403
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 76.60000000149012,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18,
+      "sequence": 67,
+      "index": 66,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 72.19999999552965,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.5,
+      "sequence": 68,
+      "index": 67,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 70.70000000298023,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 19,
+      "sequence": 69,
+      "index": 68,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 197.29999999701977,
+      "lastMoveToFrameMs": 50.19999999552965,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.19999999552965,
+      "sequence": 70,
+      "index": 69,
+      "warmup": false,
+      "automationMs": 403
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 74.10000000149012,
+      "lastMoveToFrameMs": 34.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.700000002980232,
+      "sequence": 71,
+      "index": 70,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 70,
+      "lastMoveToFrameMs": 34.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.399999998509884,
+      "sequence": 72,
+      "index": 71,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 84.10000000149012,
+      "lastMoveToFrameMs": 34.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.80000000447035,
+      "sequence": 73,
+      "index": 72,
+      "warmup": false,
+      "automationMs": 198
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 196.30000000447035,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.600000001490116,
+      "sequence": 74,
+      "index": 73,
+      "warmup": false,
+      "automationMs": 402
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 70.70000000298023,
+      "lastMoveToFrameMs": 32.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.799999997019768,
+      "sequence": 75,
+      "index": 74,
+      "warmup": false,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 75.20000000298023,
+      "lastMoveToFrameMs": 48,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 31,
+      "sequence": 76,
+      "index": 75,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 69.5,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.799999997019768,
+      "sequence": 77,
+      "index": 76,
+      "warmup": false,
+      "automationMs": 98
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 70.20000000298023,
+      "lastMoveToFrameMs": 34.79999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 21.399999998509884,
+      "sequence": 78,
+      "index": 77,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 211.39999999850988,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.200000002980232,
+      "sequence": 79,
+      "index": 78,
+      "warmup": false,
+      "automationMs": 404
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 70.70000000298023,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.399999998509884,
+      "sequence": 80,
+      "index": 79,
+      "warmup": false,
+      "automationMs": 197
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 85.39999999850988,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.69999999552965,
+      "sequence": 81,
+      "index": 80,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 85,
+      "lastMoveToFrameMs": 34.899999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 20.399999998509884,
+      "sequence": 82,
+      "index": 81,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 210.60000000149012,
+      "lastMoveToFrameMs": 66.70000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 34.20000000298023,
+      "sequence": 83,
+      "index": 82,
+      "warmup": false,
+      "automationMs": 403
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 86.10000000149012,
+      "lastMoveToFrameMs": 34.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.700000002980232,
+      "sequence": 84,
+      "index": 83,
+      "warmup": false,
+      "automationMs": 196
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 68.19999999552965,
+      "lastMoveToFrameMs": 32,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18,
+      "sequence": 85,
+      "index": 84,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 81.10000000149012,
+      "lastMoveToFrameMs": 35.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 20.5,
+      "sequence": 86,
+      "index": 85,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 207.5999999940395,
+      "lastMoveToFrameMs": 49.599999994039536,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 16.19999999552965,
+      "sequence": 87,
+      "index": 86,
+      "warmup": false,
+      "automationMs": 402
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 102.30000000447036,
+      "lastMoveToFrameMs": 49.900000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 30.900000005960464,
+      "sequence": 88,
+      "index": 87,
+      "warmup": false,
+      "automationMs": 298
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 76,
+      "lastMoveToFrameMs": 31.700000002980232,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 15.100000001490116,
+      "sequence": 89,
+      "index": 88,
+      "warmup": false,
+      "automationMs": 93
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 80.69999999552965,
+      "lastMoveToFrameMs": 33.600000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.899999998509884,
+      "sequence": 90,
+      "index": 89,
+      "warmup": false,
+      "automationMs": 134
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 80.89999999850988,
+      "lastMoveToFrameMs": 48.39999999850989,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 30.69999999552965,
+      "sequence": 91,
+      "index": 90,
+      "warmup": false,
+      "automationMs": 267
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 207.10000000149012,
+      "lastMoveToFrameMs": 50.10000000149011,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 17.899999998509884,
+      "sequence": 92,
+      "index": 91,
+      "warmup": false,
+      "automationMs": 398
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 72.39999999850988,
+      "lastMoveToFrameMs": 33.5,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.599999994039536,
+      "sequence": 93,
+      "index": 92,
+      "warmup": false,
+      "automationMs": 198
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 70.90000000596046,
+      "lastMoveToFrameMs": 33.400000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.900000005960464,
+      "sequence": 94,
+      "index": 93,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 82.29999999701977,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.399999998509884,
+      "sequence": 95,
+      "index": 94,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 212.70000000298023,
+      "lastMoveToFrameMs": 66.70000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 33.70000000298023,
+      "sequence": 96,
+      "index": 95,
+      "warmup": false,
+      "automationMs": 299
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 78,
+      "lastMoveToFrameMs": 33.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 19.5,
+      "sequence": 97,
+      "index": 96,
+      "warmup": false,
+      "automationMs": 201
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 71.79999999701977,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.200000002980232,
+      "sequence": 98,
+      "index": 97,
+      "warmup": false,
+      "automationMs": 140
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 79.70000000298023,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.600000001490116,
+      "sequence": 99,
+      "index": 98,
+      "warmup": false,
+      "automationMs": 257
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 81.10000000149012,
+      "lastMoveToFrameMs": 32.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 16.100000001490116,
+      "sequence": 100,
+      "index": 99,
+      "warmup": false,
+      "automationMs": 96
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 213.79999999701977,
+      "lastMoveToFrameMs": 66.60000000149012,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 33.79999999701977,
+      "sequence": 101,
+      "index": 100,
+      "warmup": false,
+      "automationMs": 405
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 73.39999999850988,
+      "lastMoveToFrameMs": 34.100000001490116,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.799999997019768,
+      "sequence": 102,
+      "index": 101,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 70.5,
+      "lastMoveToFrameMs": 33.400000005960464,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 17.700000002980232,
+      "sequence": 103,
+      "index": 102,
+      "warmup": false,
+      "automationMs": 199
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 100.79999999701975,
+      "lastMoveToFrameMs": 49.89999999850989,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 29.69999999552965,
+      "sequence": 104,
+      "index": 103,
+      "warmup": false,
+      "automationMs": 301
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 142.5,
+      "lastMoveToFrameMs": 50.20000000298023,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 28.5,
+      "sequence": 105,
+      "index": 104,
+      "warmup": false,
+      "automationMs": 298
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 87.79999999701977,
+      "lastMoveToFrameMs": 34.69999999552965,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 19.399999998509884,
+      "sequence": 106,
+      "index": 105,
+      "warmup": false,
+      "automationMs": 299
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 81.89999999850988,
+      "lastMoveToFrameMs": 34.29999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.799999997019768,
+      "sequence": 107,
+      "index": 106,
+      "warmup": false,
+      "automationMs": 195
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 24,
+        "y": 40
+      },
+      "gestureToFrameMs": 83.39999999850988,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 18.5,
+      "sequence": 108,
+      "index": 107,
+      "warmup": false,
+      "automationMs": 200
+    },
+    {
+      "actual": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "move",
+      "count": 1000,
+      "expected": {
+        "h": 32,
+        "w": 80,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 145.29999999701977,
+      "lastMoveToFrameMs": 51.79999999701977,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 31.99652862548828,
+        "width": 80
+      },
+      "releaseToFrameMs": 29.19999999552965,
+      "sequence": 109,
+      "index": 108,
+      "warmup": false,
+      "automationMs": 300
+    },
+    {
+      "actual": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "axis": "xy",
+      "count": 1000,
+      "expected": {
+        "h": 48,
+        "w": 96,
+        "x": 40,
+        "y": 56
+      },
+      "gestureToFrameMs": 74,
+      "lastMoveToFrameMs": 33.399999998509884,
+      "matches": true,
+      "moves": 2,
+      "rect": {
+        "height": 47.99479293823242,
+        "width": 95.9982681274414
+      },
+      "releaseToFrameMs": 18.600000001490116,
+      "sequence": 110,
+      "index": 109,
+      "warmup": false,
+      "automationMs": 126
+    }
+  ],
+  "measurementBaseCommit": "db9480836db7b5426645d947db10f2e654bd4968 + pointer instrumentation in this commit",
+  "frameRectErrors": 0
+}

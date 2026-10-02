@@ -1,0 +1,33 @@
+{
+  "originRejected": 403,
+  "unauthenticatedRejected": 401,
+  "invalidSchemaRejected": 400,
+  "hostRejected": 403,
+  "leaks": [
+    {
+      "route": "/.local/db-config.json",
+      "status": 403,
+      "secretAbsent": true
+    },
+    {
+      "route": "/@fs/Users/jedi/DEV/reloaded-prototype/.local/db-config.json",
+      "status": 403,
+      "secretAbsent": true
+    },
+    {
+      "route": "/.git/config",
+      "status": 403,
+      "secretAbsent": true
+    },
+    {
+      "route": "/.LOCAL/db-config.json",
+      "status": 403,
+      "secretAbsent": true
+    },
+    {
+      "route": "/%2elocal/db-config.json",
+      "status": 403,
+      "secretAbsent": true
+    }
+  ]
+}

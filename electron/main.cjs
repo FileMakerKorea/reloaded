@@ -1,0 +1,3 @@
+const {app,BrowserWindow}=require('electron');
+app.whenReady().then(()=>{const win=new BrowserWindow({width:1440,height:940,webPreferences:{nodeIntegration:false,contextIsolation:true,sandbox:true}});win.webContents.session.setPermissionRequestHandler((_wc,_permission,callback)=>callback(false));win.webContents.on('will-attach-webview',event=>event.preventDefault());win.webContents.setWindowOpenHandler(()=>({action:'deny'}));win.webContents.on('will-navigate',(e,url)=>{if(new URL(url).origin!=='http://127.0.0.1:5173')e.preventDefault();});win.loadURL('http://127.0.0.1:5173');});
+app.on('window-all-closed',()=>app.quit());

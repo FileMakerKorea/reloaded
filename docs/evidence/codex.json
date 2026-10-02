@@ -1,0 +1,9 @@
+{
+  "available": true,
+  "authenticated": true,
+  "authType": "chatgpt",
+  "inference": {
+    "text": "RELOADED 연결 확인 완료",
+    "status": "completed"
+  }
+}
