@@ -91,3 +91,24 @@ export function toNumber(original: unknown): Conversion {
 export function historyPush(stack: Project[], p: Project) {
   return [...stack.slice(-99), structuredClone(p)];
 }
+
+export function snapCenter(
+  position: number,
+  size: number,
+  centers: number[],
+  threshold = 6,
+) {
+  const center = position + size / 2;
+  const nearest = centers
+    .filter((c) => c - size / 2 >= 0 && c - size / 2 <= 200000)
+    .reduce<number | undefined>(
+      (best, c) =>
+        best === undefined || Math.abs(c - center) < Math.abs(best - center)
+          ? c
+          : best,
+      undefined,
+    );
+  return nearest !== undefined && Math.abs(nearest - center) <= threshold
+    ? { position: nearest - size / 2, guide: nearest }
+    : undefined;
+}

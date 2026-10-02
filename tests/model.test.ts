@@ -9,6 +9,7 @@ import {
   duplicate,
   toNumber,
   snap,
+  snapCenter,
 } from "../src/model.js";
 import { saveProject, readProject } from "../server/store.js";
 const fixture = projectSchema.parse(
@@ -148,4 +149,15 @@ test("alignment is validated, copied and persists without changing business bind
   } finally {
     await rm(root, { recursive: true, force: true });
   }
+});
+
+test("center guides align unequal widths and frozen canvas bounds within 6px", () => {
+  assert.deepEqual(snapCenter(139, 80, [183]), { position: 143, guide: 183 });
+  assert.deepEqual(snapCenter(287, 180, [380]), { position: 290, guide: 380 });
+  assert.equal(snapCenter(279, 180, [380]), undefined);
+  assert.deepEqual(snapCenter(204, 48, [230, 240]), {
+    position: 206,
+    guide: 230,
+  });
+  assert.equal(snapCenter(0, 180, [20]), undefined);
 });

@@ -25,17 +25,17 @@
     {
       "file": "index.html",
       "bytes": 365,
-      "gzip": 290
+      "gzip": 291
     },
     {
-      "file": "assets/index-30we7PbF.css",
-      "bytes": 8240,
-      "gzip": 2603
+      "file": "assets/index-BoDX3IIu.js",
+      "bytes": 300747,
+      "gzip": 90321
     },
     {
-      "file": "assets/index-BF8SdZ0D.js",
-      "bytes": 299985,
-      "gzip": 90018
+      "file": "assets/index-l9LjQ6Kz.css",
+      "bytes": 8308,
+      "gzip": 2621
     }
   ],
   "checks": {

@@ -5,6 +5,7 @@ import {
   historyPush,
   patchNode,
   snap,
+  snapCenter,
   type Project,
   type LayoutNode,
   type NodePatch,
@@ -31,7 +32,8 @@ function Editor() {
     [saved, setSaved] = useState(""),
     [status, setStatus] = useState("로컬 프로젝트를 여는 중…"),
     [busy, setBusy] = useState(false),
-    [guide, setGuide] = useState(false);
+    [guide, setGuide] = useState(false),
+    [centerGuide, setCenterGuide] = useState<{ x?: number; y?: number }>({});
   const s = useBusiness();
   const measurement = useRef({ start: performance.now(), operation: "load" });
   const measuring = new URLSearchParams(location.search).has("measure");
@@ -72,6 +74,8 @@ function Editor() {
         sx: number;
         sy: number;
         axis: string;
+        canvasWidth: number;
+        canvasHeight: number;
         started: number;
         lastMove: number;
         moves: number;
@@ -196,6 +200,8 @@ function Editor() {
       sx: rect.width / canvas.offsetWidth,
       sy: rect.height / canvas.offsetHeight,
       axis,
+      canvasWidth: canvas.offsetWidth,
+      canvasHeight: canvas.offsetHeight,
       started: measuring ? performance.now() : 0,
       lastMove: 0,
       moves: 0,
@@ -270,6 +276,21 @@ function Editor() {
           : g.node.h,
       };
     }
+    if (g.axis === "move") {
+      // Center candidates take priority over the grid within the 6px tolerance.
+      // Freeze canvas bounds at pointerdown so its center does not drift while dragging.
+      const horizontal = snapCenter(g.node.x + dx, g.node.w, [
+        g.canvasWidth / 2,
+        ...others.map((n) => n.x + n.w / 2),
+      ]);
+      const vertical = snapCenter(g.node.y + dy, g.node.h, [
+        g.canvasHeight / 2,
+        ...others.map((n) => n.y + n.h / 2),
+      ]);
+      if (horizontal) p.x = horizontal.position;
+      if (vertical) p.y = vertical.position;
+      setCenterGuide({ x: horizontal?.guide, y: vertical?.guide });
+    } else setCenterGuide({});
     setProject(patchNode(current.current, g.node.id, p));
     setGuide(true);
   }
@@ -332,6 +353,7 @@ function Editor() {
     }
     gesture.current = undefined;
     setGuide(false);
+    setCenterGuide({});
   }
   function canvas(page: string) {
     if (!project) return null;
@@ -478,8 +500,20 @@ function Editor() {
         ))}
         {guide && n && (
           <>
-            <div className="snap-line vertical" style={{ left: n.x }} />
-            <div className="snap-line horizontal" style={{ top: n.y }} />
+            <div
+              className={`snap-line vertical ${centerGuide.x !== undefined ? "center" : ""}`}
+              aria-label={
+                centerGuide.x !== undefined ? "가로 중앙 가이드" : undefined
+              }
+              style={{ left: centerGuide.x ?? n.x }}
+            />
+            <div
+              className={`snap-line horizontal ${centerGuide.y !== undefined ? "center" : ""}`}
+              aria-label={
+                centerGuide.y !== undefined ? "세로 중앙 가이드" : undefined
+              }
+              style={{ top: centerGuide.y ?? n.y }}
+            />
           </>
         )}
       </div>
@@ -596,7 +630,7 @@ function Editor() {
                   객체 복제
                 </button>
                 <p className="subtle">
-                  8px 그리드 · 인접 객체에 자석 정렬
+                  8px 그리드 · 객체/캔버스 중앙에 자석 정렬
                   <br />
                   드래그로 이동, 세 핸들로 크기 조절
                 </p>

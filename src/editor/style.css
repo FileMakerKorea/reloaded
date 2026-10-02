@@ -276,3 +276,5 @@ summary {
   max-height: 400px;
   font: 12px/1.8 system-ui;
 }
+
+.snap-line.center { background: #5a72dd; box-shadow: 0 0 0 1px #5a72dd22; }
