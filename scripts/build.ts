@@ -15,9 +15,16 @@ const measurementEffect = measured
   : "";
 const lit = (x: unknown) => JSON.stringify(x).replaceAll("<", "\\u003c");
 function node(n: (typeof project.nodes)[number]) {
-  const style = lit({ left: n.x, top: n.y, width: n.w, height: n.h });
+  const style = lit({
+    left: n.x,
+    top: n.y,
+    width: n.w,
+    height: n.h,
+    textAlign: n.textAlign,
+  });
+  const alignment = lit({ textAlign: n.textAlign });
   const label = "{" + lit(n.label) + "}";
-  return `<div className=${lit("business-node " + n.kind)} style={${style}}>${n.kind === "input" ? `<label className="field-caption" htmlFor=${lit("f" + n.id)}>${label}</label><input id=${lit("f" + n.id)} aria-label={${lit(n.label)}} value={s.values[${lit(n.binding || "name")}]} onChange={e=>s.setValues({...s.values,[${lit(n.binding || "name")}]:e.target.value})}/>` : n.kind === "button" ? `<button onClick={()=>s.action(${lit(n.action)})}>${label}</button>` : `<span>${label}</span>`}</div>`;
+  return `<div className=${lit("business-node " + n.kind)} style={${style}}>${n.kind === "input" ? `<label className="field-caption" htmlFor=${lit("f" + n.id)}>${label}</label><input style={${alignment}} id=${lit("f" + n.id)} aria-label={${lit(n.label)}} value={s.values[${lit(n.binding || "name")}]} onChange={e=>s.setValues({...s.values,[${lit(n.binding || "name")}]:e.target.value})}/>` : n.kind === "button" ? `<button style={${alignment}} onClick={()=>s.action(${lit(n.action)})}>${label}</button>` : `<span>${label}</span>`}</div>`;
 }
 function canvas(page: string) {
   const nodes = project.nodes.filter((n) => n.page === page);

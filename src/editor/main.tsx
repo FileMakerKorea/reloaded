@@ -356,7 +356,13 @@ function Editor() {
             data-object-id={node.id}
             data-source={`.reloaded/project.json#/nodes/${node.id}`}
             className={`business-node ${node.kind} ${edit && selected === node.id ? "selected" : ""}`}
-            style={{ left: node.x, top: node.y, width: node.w, height: node.h }}
+            style={{
+              left: node.x,
+              top: node.y,
+              width: node.w,
+              height: node.h,
+              textAlign: node.textAlign,
+            }}
             onPointerDown={(e) => start(e, node, "move")}
             onPointerMove={move}
             onPointerUp={() => finish()}
@@ -378,6 +384,7 @@ function Editor() {
                 <input
                   id={"field-" + node.id}
                   aria-label={node.label}
+                  style={{ textAlign: node.textAlign }}
                   readOnly={edit}
                   value={s.values[node.binding || "name"]}
                   onChange={(e) =>
@@ -389,7 +396,10 @@ function Editor() {
                 />
               </>
             ) : node.kind === "button" ? (
-              <button onClick={() => s.action(node.action)}>
+              <button
+                style={{ textAlign: node.textAlign }}
+                onClick={() => s.action(node.action)}
+              >
                 {node.label}
               </button>
             ) : (
@@ -530,6 +540,25 @@ function Editor() {
                         patch(n.id, { label: e.target.value });
                     }}
                   />
+                </label>
+                <label className="control-label">
+                  텍스트 정렬
+                  <select
+                    aria-label="텍스트 정렬"
+                    value={
+                      n.textAlign || (n.kind === "button" ? "center" : "left")
+                    }
+                    onChange={(e) =>
+                      patch(n.id, {
+                        textAlign: e.target.value as
+                          "left" | "center" | "right",
+                      })
+                    }
+                  >
+                    <option value="left">왼쪽</option>
+                    <option value="center">가운데</option>
+                    <option value="right">오른쪽</option>
+                  </select>
                 </label>
                 <div className="dimensions">
                   {(["x", "y", "w", "h"] as const).map((key, i) => (

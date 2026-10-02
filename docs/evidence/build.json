@@ -8,41 +8,41 @@
     {
       "file": "index.html",
       "bytes": 361,
-      "gzip": 283
+      "gzip": 281
     },
     {
-      "file": "assets/index-0l3PlNvN.css",
-      "bytes": 4484,
-      "gzip": 1560
+      "file": "assets/index-CGeO2FPh.css",
+      "bytes": 4575,
+      "gzip": 1588
     },
     {
-      "file": "assets/index-BYobMRdv.js",
-      "bytes": 228209,
-      "gzip": 71303
+      "file": "assets/index-Ct1hutna.js",
+      "bytes": 228252,
+      "gzip": 71315
     }
   ],
   "editor": [
     {
       "file": "index.html",
       "bytes": 365,
-      "gzip": 289
+      "gzip": 290
     },
     {
-      "file": "assets/index-DEOBpTNw.js",
-      "bytes": 299455,
-      "gzip": 89871
+      "file": "assets/index-30we7PbF.css",
+      "bytes": 8240,
+      "gzip": 2603
     },
     {
-      "file": "assets/index-lMrP5qKc.css",
-      "bytes": 8149,
-      "gzip": 2578
+      "file": "assets/index-BF8SdZ0D.js",
+      "bytes": 299985,
+      "gzip": 90018
     }
   ],
   "checks": {
     "editorMetadataAbsent": true,
     "sourceMapsAbsent": true
   },
-  "modelRevision": 2,
+  "modelRevision": 3,
   "runtimeModules": [
     "\u0000vite/modulepreload-polyfill.js",
     "\u0000/Users/jedi/DEV/reloaded-prototype/node_modules/react/jsx-runtime.js?commonjs-module",

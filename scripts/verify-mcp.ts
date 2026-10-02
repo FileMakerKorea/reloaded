@@ -46,7 +46,7 @@ try {
     arguments: {
       id: p.nodes[1].id,
       expectedRevision: p.revision,
-      patch: { w: 456 },
+      patch: { w: 456, textAlign: "center" },
     },
   });
   assert.ok(!result.isError);
@@ -54,6 +54,7 @@ try {
     await readFile(path.join(root, ".reloaded/project.json"), "utf8"),
   );
   assert.equal(disk.nodes[1].w, 456);
+  assert.equal(disk.nodes[1].textAlign, "center");
   const stale = await client.callTool({
     name: "object_patch",
     arguments: {
@@ -70,6 +71,7 @@ try {
         transport: "stdio",
         tools: list.tools.map((t) => t.name),
         persistedWidth: disk.nodes[1].w,
+        persistedAlignment: disk.nodes[1].textAlign,
         staleRejected: true,
       },
       null,

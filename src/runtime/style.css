@@ -344,3 +344,7 @@ footer {
     display: none;
   }
 }
+
+/* Captions and text occupy the object width so text-align uses its full box. */
+.business-node > .field-caption { right: 0; }
+.business-node.text > span:not(.object-tag) { width: 100%; }

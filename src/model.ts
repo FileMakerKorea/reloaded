@@ -5,6 +5,7 @@ export const nodeSchema = z
     page: z.enum(["customers", "register", "settings", "popup"]),
     kind: z.enum(["input", "button", "text"]),
     label: z.string().min(1).max(160),
+    textAlign: z.enum(["left", "center", "right"]).optional(),
     x: z.number().finite().min(0).max(200000),
     y: z.number().finite().min(0).max(200000),
     w: z.number().finite().min(40).max(1200),

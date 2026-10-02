@@ -101,5 +101,51 @@ test("AST identity survives rename; missing refs and ambiguous names fail closed
     'SELECT """;drop" FROM "public"."customers" LIMIT $1',
   );
 });
-import {symlink} from 'node:fs/promises';
-test('metadata symlinks and sources writes fail closed',async()=>{const root=await mkdtemp(path.join(tmpdir(),'reloaded-boundary-'));try{const model=path.join(root,'original.json');await writeFile(model,JSON.stringify(fixture));await mkdir(path.join(root,'.reloaded'));await symlink(model,path.join(root,'.reloaded/project.json'));await assert.rejects(readProject(root));const source=path.join(root,'sources','sample');await mkdir(path.join(source,'.reloaded'),{recursive:true});await writeFile(path.join(source,'.reloaded/project.json'),JSON.stringify(fixture));await assert.rejects(saveProject(source,fixture,fixture.revision));assert.equal((await readProject(source)).revision,fixture.revision);}finally{await rm(root,{recursive:true,force:true});}});
+import { symlink } from "node:fs/promises";
+test("metadata symlinks and sources writes fail closed", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "reloaded-boundary-"));
+  try {
+    const model = path.join(root, "original.json");
+    await writeFile(model, JSON.stringify(fixture));
+    await mkdir(path.join(root, ".reloaded"));
+    await symlink(model, path.join(root, ".reloaded/project.json"));
+    await assert.rejects(readProject(root));
+    const source = path.join(root, "sources", "sample");
+    await mkdir(path.join(source, ".reloaded"), { recursive: true });
+    await writeFile(
+      path.join(source, ".reloaded/project.json"),
+      JSON.stringify(fixture),
+    );
+    await assert.rejects(saveProject(source, fixture, fixture.revision));
+    assert.equal((await readProject(source)).revision, fixture.revision);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test("alignment is validated, copied and persists without changing business bindings", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "reloaded-align-"));
+  try {
+    await mkdir(path.join(root, ".reloaded"));
+    await writeFile(
+      path.join(root, ".reloaded/project.json"),
+      JSON.stringify(fixture),
+    );
+    let next = fixture;
+    for (const kind of ["input", "button", "text"] as const) {
+      const node = next.nodes.find((n) => n.kind === kind)!;
+      next = patchNode(next, node.id, { textAlign: "center" });
+      const copy = duplicate(next, node.id);
+      assert.equal(copy.nodes.at(-1)!.textAlign, "center");
+      assert.equal(copy.nodes.at(-1)!.binding, node.binding);
+      assert.equal(copy.nodes.at(-1)!.action, node.action);
+      assert.throws(() =>
+        patchNode(next, node.id, { textAlign: "center; color:red" } as any),
+      );
+    }
+    await saveProject(root, next, fixture.revision);
+    assert.deepEqual((await readProject(root)).nodes, next.nodes);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
